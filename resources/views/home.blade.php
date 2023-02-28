@@ -10,10 +10,12 @@
         <div class="card-section">
             @foreach ($comics as $comic)
             <div class="card">
-                <figure>
-                    <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
-                    <figcaption>{{$comic['series']}}</figcaption>
-                </figure>
+                <a href="{{route('comics.show', $comic->id)}}">
+                    <figure>
+                        <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
+                        <figcaption>{{$comic['series']}}</figcaption>
+                    </figure>
+                </a>
             </div>
             @endforeach
 
