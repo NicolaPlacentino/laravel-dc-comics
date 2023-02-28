@@ -1,0 +1,53 @@
+header {
+    height: 150px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+        figure {
+            height: 90px;
+
+            a {
+                height: 100%;
+
+                img {
+                    height: 100%;
+                    width: auto;
+                }
+            }
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            height: 100%;
+
+            li {
+                padding: 0 12px;
+                height: 100%;
+
+                display: flex;
+                align-items: center;
+
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 22px;
+                    font-weight: bold;
+                }
+
+                &.active {
+                    border-bottom: 5px solid dodgerblue;
+
+                    a {
+                        color: dodgerblue;
+                    }
+                }
+            }
+        }
+    }
+}
