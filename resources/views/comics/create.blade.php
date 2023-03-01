@@ -33,8 +33,8 @@
                             <input type="text" name="price" id="price" class="mb-1">
                         </div>
                         <div class="me-5">
-                            <label for="sale-date" class="d-block">Data di vendita</label>
-                            <input type="text" name="sale-date" id="sale-date" class="mb-1">
+                            <label for="sale_date" class="d-block">Data di vendita</label>
+                            <input type="text" name="sale_date" id="sale_date" class="mb-1">
                         </div>
                     </div>
 
