@@ -29,7 +29,7 @@ main {
         display: flex;
         flex-wrap: wrap;
 
-        .card {
+        .my-card {
             width: calc(100% / 6);
             padding: 10px;
 
@@ -66,5 +66,9 @@ main {
         cursor: pointer;
 
         margin: 20px 0;
+    }
+
+    a {
+        text-decoration: none;
     }
 }

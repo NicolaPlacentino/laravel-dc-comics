@@ -9,8 +9,8 @@
             <li>
                 <a href="#">Characters</a>
             </li>
-            <li>
-                <a href="#">Comics</a>
+            <li class="@if(Route::is('home') || Route::is('comics.show')) active @endif">
+                <a href="{{url('/')}}">Comics</a>
             </li>
             <li>
                 <a href="#">Movies</a>

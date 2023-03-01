@@ -1,5 +1,7 @@
 @extends('layouts.main')
 
+@section('title', 'Comics')
+
 @section('main-content')
     <div class="comic-show container">
         <h1>{{$comic->title}}</h1>
