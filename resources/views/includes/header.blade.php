@@ -9,7 +9,7 @@
             <li>
                 <a href="#">Characters</a>
             </li>
-            <li class="@if(Route::is('home') || Route::is('comics.show')) active @endif">
+            <li class="@if(Route::is('home') || Route::is('comics*')) active @endif">
                 <a href="{{url('/')}}">Comics</a>
             </li>
             <li>
