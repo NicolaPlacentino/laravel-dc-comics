@@ -22,7 +22,10 @@
                         <span>{{$comic->writers}}</span>
                     </div>
                 </div>
-
+                
+                <div class="d-flex justify-content-end mt-3">
+                    <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-outline-primary">Modifica</a>
+                </div>
              </div>
              <div class="w-50">
                 <figure>

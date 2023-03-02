@@ -19,6 +19,8 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/comics/create', [ComicController::class, 'create'])->name('comics.create');
 
-Route::get('/comics/{id}', [ComicController::class, 'show'])->name('comics.show');
+Route::get('/comics/{comic}', [ComicController::class, 'show'])->name('comics.show');
 
 Route::post('/comics', [ComicController::class, 'store'])->name('comics.store');
+
+Route::get('/teams/{comic}/edit', [ComicController::class, 'edit'])->name('comics.edit');
