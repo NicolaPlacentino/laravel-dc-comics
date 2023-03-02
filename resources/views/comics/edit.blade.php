@@ -5,7 +5,7 @@
 @section('main-content')
     <div class="container">
         <h1 class="text-center">Modifica un fumetto</h1>
-        <form action="{{route('comics.store')}}" method="POST">
+        <form action="{{route('comics.update', $comic->id)}}" method="POST">
             @method('PUT')
             @csrf
             <div class="row">
@@ -61,7 +61,7 @@
                 </div>
 
                 <div class="text-center mb-4">
-                    <a href="{{route('teams.update', $team->id)}}" class="btn btn-primary w-25 text-uppercase">Salva</a>
+                    <button class="btn btn-primary w-25 text-uppercase">Salva</a>
                 </div>
             </div>
         </form>
