@@ -25,6 +25,11 @@
                 
                 <div class="d-flex justify-content-end mt-3">
                     <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-outline-primary">Modifica</a>
+                    <form action="{{route('comics.destroy', $comic->id)}}" method="POST" class="ms-3">
+                        @csrf
+                        @method('DELETE')
+                        <button class="btn btn-outline-danger">Elimina</button>
+                    </form>
                 </div>
              </div>
              <div class="w-50">

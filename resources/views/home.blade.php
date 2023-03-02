@@ -9,6 +9,11 @@
     </div>
     <div class="my-container">
         <h2>Current series</h2>
+        @if (session('delete'))
+        <div class="alert alert-success">
+            {{session('delete')}}
+        </div>
+        @endif
         <div class="card-section">
             @foreach ($comics as $comic)
             <div class="my-card">
