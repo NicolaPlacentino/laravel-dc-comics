@@ -60,7 +60,7 @@
                 </div>
 
                 <div class="text-center mb-4">
-                    <button class="btn btn-primary w-25 text-uppercase">Salva</button>
+                    <a href="{{route('teams.update', $team->id)}}" class="btn btn-primary w-25 text-uppercase">Salva</a>
                 </div>
             </div>
         </form>
